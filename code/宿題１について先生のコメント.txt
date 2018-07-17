@@ -1,0 +1,41 @@
+
+2018.06.30 20:05
+宿題１について北村先生からのコメント
+
+要するに私の場合、
+
+2003年のYes/No設問について、非該当の回答が9のままになっていた
+他の年に揃えるためには99に置き換える必要がある
+
+2005年の性別など尋ねる設問は、文字情報で入っているので数値に置き換える必要がある
+
+【反省】記述統計を表示して確認してみるべきでした
+
+
+Dear all:
+
+Here comes some comments regarding your assignment.
+
+1. The assignment was graded according to the following points.
+
+(1) Whether the code produces an output.
+(2) 2003:  Whether you change 9 to 99 in all relevant "yn_" variables.
+(3) 2005: 
+     (i) Whether you adjust values for variables such as sex, prefecture, age, and all relevant "yn_" variables.
+     (ii) Whether the code creates a new "name" variable by combining the family name and the first name.
+(4) 2012 & 2014: Whether you change RESULT variable so that it corresponds to the other years.
+(5) 2009, 2012 & 2014: Whether the code removes "=" from candidate names so that they will be consistent across years.
+(6) Whether the code adjusts party names so that they will be consistent across years.
+
+All of your code can produce an output, and many recognize the point (3) (ii), but there are differences across assignments regarding the rest of the points. I recommend you to check the final data to check if all variables are correctly made. I also admit that my previous code didn't deal with some of the points above but some of you correctly modified them (thanks!).
+
+2.  For those who write "path_to_your_folder/input/xxxx.csv" to import data, please use either (a) "os.chdir("..")" and just "input/xxxx.csv" as I do in my classroom example, or (b) "os.chdir("path_to_your_folder")" and "input/xxxx.csv", instead of writing the entire path to each of your csv files. The reason is quite simple---It is hardly replicated in another computer because one has to change the paths one-by-one.
+
+3. Recall that Python (and others programs like R) is case sensitive. Be careful when using capital letters and small letters. Also, be careful when you replace a value using "replace()". It could be a string or a number (e.g., replace({'9':'99'}) is correct, not replace({9:99})).
+
+I attach my code for comparison below.
+
+Have a nice weekend!
+
+Best,
+Shuhei
